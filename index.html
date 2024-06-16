@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--------------Swiper JS------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -308,6 +311,134 @@
 </section>
 <!--===========END OF FAQ==============-->
 
+<section class="container testimonials__container mySwiper">
+    <h2>Your Feedback</h2>
+    <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar1.jpg" alt="child's_avatar" />
+            </div>
+
+            <div class="testimonial__info">
+                <h5>Emma</h5>
+                <small>7 years old</small>
+            </div>
+            <div class="testimonial__body">
+                <p>"I love the games and videos! I learned how to stay safe online and now I always use strong passwords. It's so much fun and I feel like a real internet explorer!"</p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar2.jpg" alt="child's_avatar"/>
+            </div>
+
+            <div class="testimonial__info">
+                <h5>Liam</h5>
+                <small>8 years old</small>
+            </div>
+            <div class="testimonial__body">
+                <p>"The quizzes were my favorite part. I didn't know much about cyberbullying before, but now I know how to handle it if I see it. The lessons were really cool and easy to understand!"
+
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar3.jpg" alt="child's_avatar"/>
+            </div>
+
+            <div class="testimonial__info">
+                <h5>Sophia</h5>
+                <small>9 years old</small>
+            </div>
+            <div class="testimonial__body">
+                <p>"I learned about malware and how it can hurt my computer. Now I tell my friends to be careful with what they download. The interactive stories made learning fun and interesting!"</p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar4.jpg" alt="child's_avatar"/>
+            </div>
+
+            <div class="testimonial__info">
+                <h5>Noah</h5>
+                <small>10 years old</small>
+            </div>
+            <div class="testimonial__body">
+                <p>"The course taught me how to be safe while gaming. I know not to share personal information and to be nice to other players. It's awesome because I can enjoy my games without worrying."</p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar5.jpg" alt="child's_avatar"/>
+            </div>
+
+            <div class="testimonial__info">
+                <h5>Ava</h5>
+                <small> 6 years old</small>
+            </div>
+            <div class="testimonial__body">
+                <p>"The animations and characters were so fun! I learned to ask my mom before going to new websites. I feel much safer online now."</p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar6.jpg" alt="child's_avatar"/>
+            </div>
+
+            <div class="testimonial__info">
+                <h5>Lucas</h5>
+                <small>9 years old</small>
+            </div>
+            <div class="testimonial__body">
+                <p>"I liked learning about safe searching and using kid-friendly search engines. It was cool to see how I can find what I need without bumping into bad stuff. Thanks for making learning fun!"</p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar7.jpg" alt="child's_avatar"/>
+            </div>
+
+            <div class="testimonial__info">
+                <h5>Mia</h5>
+                <small>8 years old</small>
+            </div>
+            <div class="testimonial__body">
+                <p>"The lessons were really fun and I learned a lot. Now I tell my parents if I see something weird online. I really liked the stories and quizzes. They helped me understand everything better."
+
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <div class="swiper-pagination"></div>
+</section>
+
+
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when window width is >= 600
+      breakpoints: {
+        600: {
+            slidesPerView: 2
+        }
+      }
+    });
+</script>
 </body>
 </html>
